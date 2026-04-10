@@ -114,7 +114,8 @@ h1 {
 
 <script>
 function showLove() {
-  document.getElementById('finalMessage').classList.remove('hidden');
+  const msg = document.getElementById('finalMessage');
+  msg.style.display = 'block';
 }
 
 function createFloating(type, emoji, containerClass) {
