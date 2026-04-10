@@ -100,13 +100,15 @@ h1 {
     And I just want you to know…
   </div>
 
-  <button class="button" onclick="showLove()">click this 💌</button>
+  <button class="button" onclick="document.getElementById('finalMessage').style.opacity='1'">
+  click this 💌
+</button>
 
-  <div id="finalMessage" class="hidden final">
-    I LOVE YOU SO MUCH HARSH 💖😭<br><br>
-    I’m so lucky to have you… and I’ll always be here for you 🥺<br><br>
-    Happy Birthday my baby 🎂🎈💖
-  </div>
+<div id="finalMessage" style="opacity:0; transition: opacity 1.5s ease;" class="final">
+  I LOVE YOU SO MUCH HARSH 💖😭<br><br>
+  I’m so lucky to have you… and I’ll always be here for you 🥺<br><br>
+  Happy Birthday my baby 🎂🎈💖
+</div>
 </div>
 
 <div class="hearts"></div>
