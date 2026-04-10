@@ -22,7 +22,6 @@ body {
 
 h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
 }
 
 .big-text {
@@ -34,6 +33,12 @@ h1 {
 .highlight {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.final {
+  font-size: 2rem;
+  margin-top: 40px;
+  animation: fadeIn 2s ease;
 }
 
 .hearts, .balloons {
@@ -54,25 +59,6 @@ h1 {
 @keyframes floatUp {
   0% { transform: translateY(100vh); opacity: 1; }
   100% { transform: translateY(-10vh); opacity: 0; }
-}
-
-.button {
-  margin-top: 40px;
-  padding: 15px 25px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 30px;
-  background: white;
-  color: #ff4d6d;
-  cursor: pointer;
-}
-
-.hidden { display: none; }
-
-.final {
-  font-size: 2rem;
-  margin-top: 30px;
-  animation: fadeIn 2s ease;
 }
 
 @keyframes fadeIn {
@@ -100,26 +86,17 @@ h1 {
     And I just want you to know…
   </div>
 
-  <button class="button" onclick="document.getElementById('finalMessage').style.opacity='1'">
-  click this 💌
-</button>
-
-<div id="finalMessage" style="opacity:0; transition: opacity 1.5s ease;" class="final">
-  I LOVE YOU SO MUCH HARSH 💖😭<br><br>
-  I’m so lucky to have you… and I’ll always be here for you 🥺<br><br>
-  Happy Birthday my baby 🎂🎈💖
-</div>
+  <div class="final">
+    I LOVE YOU SO MUCH HARSH 💖😭<br><br>
+    I’m so lucky to have you… and I’ll always be here for you 🥺<br><br>
+    Happy Birthday my baby 🎂🎈💖
+  </div>
 </div>
 
 <div class="hearts"></div>
 <div class="balloons"></div>
 
 <script>
-function showLove() {
-  const msg = document.getElementById('finalMessage');
-  msg.style.display = 'block';
-}
-
 function createFloating(type, emoji, containerClass) {
   const el = document.createElement('div');
   el.classList.add(type);
@@ -140,8 +117,3 @@ setInterval(() => {
 
 </body>
 </html>
-
-
-Attachments area
-Preview YouTube video Humsafar (Full Video) | Varun & Alia Bhatt | Akhil Sachdeva | "Badrinath Ki Dulhania"Preview YouTube video Humsafar (Full Video) | Varun & Alia Bhatt | Akhil Sachdeva | "Badrinath Ki Dulhania"
-
